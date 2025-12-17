@@ -1,0 +1,58 @@
+Step1: Create a Collection
+        Click Collections
+        Click New Collection
+        Name it:
+        Click Create
+Step2: Create POST Request
+       Under your collection 3 dots: 
+       Click Add a request
+       Request name:
+       Method: POST
+       URL (dummy, any URL is fine):
+            https://example.com/login
+       Click Save
+       Add Request body: Under request only
+       Open the request
+       Go to Body
+       Select raw
+       Select JSON
+       Paste this:
+       {
+        "username": "admin",
+        "password": "1234"
+        }
+Step 3: Create Mock Response
+        Under request only
+        In the same request, click Examples
+        Click Add Example
+        Example name:
+        Status code: 200
+        Response Body:
+            {
+                "message": "Login successful",
+                "token": "abc123"
+            }
+        Click Save Example
+        Now Postman knows what response to return.
+
+Step 4: Create Mock Server
+        Under collection 3 dots: Mock
+        Click New
+        Choose Mock Server
+        Select Existing Collection
+
+Step 5: Copy a mock server URL
+        https://abcd1234.mock.pstmn.io
+        Your POST endpoint becomes: https://abcd1234.mock.pstmn.io/login
+
+After running javascript code 
+
+Step 6 : Run & Test
+         Open the HTML file in browser
+         Click Send Login
+         Open Developer Tools → Console
+        You will see:
+        {
+            "message": "Login successful",
+            "token": "abc123"
+        }
