@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            color: white;
+            background-color: black;
+            width: 190px;
+            height: 190px;
+
+        }
+        #clone {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+
+    </ul>
+    <div id="box">Content</div>
+    <button onclick="add()">Add items</button><br><br>
+    <button onclick="insertbefore()">Insert before</button><br><br>
+    <button onclick="replacechild()">Replace child</button><br><br>
+    <h1 id="oldchild">Old Content</h1>
+    <div id="clone">
+        <h1>html</h1>
+        <h2>CSs</h2>
+        <h3>Javascript</h3>
+    </div>
+    <h2 id="text">
+        Hello 
+        <span style="display:none">Hidden content</span>
+        World 
+    </h2>
+    <script src="dom4.js"></script>
+</body>
+</html>

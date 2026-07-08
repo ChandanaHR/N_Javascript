@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            color: white;
+            background-color: black;
+            width: 50px;
+            height: 50px;
+        }
+        #parent {
+            margin:auto;
+            width: 200px;
+            height: 200px;
+            color: white;
+            background-color: black;
+        }
+        #child {
+            margin-top: 40px;
+            width: 100px;
+            height: 100px;
+            color: white;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mouse events -->
+     <button id="btn">Click me</button><br><br>
+     <div id="parent">
+        Parent class
+        <div id="child">
+            Child class
+        </div>
+     </div>
+
+    <script src="domevents.js"></script>
+</body>
+</html>
